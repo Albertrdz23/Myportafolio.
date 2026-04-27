@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio | Nombre Apellido</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+<nav>
+    <ul>
+        <li><a href="javascript:void(0)" onclick="mostrarSeccion('About_Me')">About me</a></li>
+        <li><a href="javascript:void(0)" onclick="mostrarSeccion('Work_Experience')">Work Experience</a></li>
+        <li><a href="javascript:void(0)" onclick="mostrarSeccion('Contact')">Contact</a></li>
+        <li><a href="javascript:void(0)" onclick="mostrarSeccion('Skills')">Skills</a></li>
+    </ul>
+      </nav>
+</header>
+
+    <main>
+        <section id="About_Me">
+           <h1>Hello there! This is Bryan Rodriguez</h1>
+           <p><strong>Customer Service, Technical Support & Sales Representative.</strong></p>
+           <p>
+        Customer Service Representative with experience in technical support, billing assistance, and sales. Skilled in handling high-volume customer interactions, resolving issues efficiently, and maintaining strong customer satisfaction. Proven ability to communicate effectively, adapt quickly, and identify opportunities for upselling. English proficiency at an intermediate (B2) level.
+           </p>
+        </section>
+  <section id="Work_Experience">
+            <div class="proyecto-card">
+                <h3>Sales/Upseeling - Redwood S.A de C.V</h3>
+                <p><em>November 2025 to March 2026</em></p>
+                <p>Advised customers on wellness and healthy aging products based on individual needs
+Built customer trust through clear communication and personalized service
+Managed orders, inquiries, and follow-ups to ensure customer satisfaction and retention
+Identified sales opportunities and recommended suitable products to increase revenue </p>
+            </div>
+    <div class="proyecto-card">
+        <h3>Customer Service Representative - Gold Services S.A de C.V</h3>
+        <p><em>March 2024 to November 2025</em></p>
+        <p>Provided customer support by troubleshooting product issues and resolving service-related concerns
+Handled billing inquiries, refunds, and return processes with accuracy and compliance
+Delivered positive customer experiences through effective communication and timely issue resolution
+Maintained performance metrics (AHT, CSAT) in a high-volume call environment</p>
+    </div>
+    <div class="proyecto-card">
+        <h3>Tech Support Specialist - Teleservices S.A de C.V</h3>
+        <p><em>November 2021 to April 2023</em></p>
+        <p>Assisted customers with billing inquiries, technical issues, and service plan management
+Diagnosed and resolved technical problems efficiently while maintaining service quality standards
+Educated customers on products and services, identifying opportunities for solutions and upselling
+Achieved productivity and quality targets in a fast-paced support environment</p>
+    </div>
+   </section>
+        <section id="Contact">
+            <h2>Contact</h2>
+            <button id="btn-copy" onclick="copiarEmail()">
+                Copy my e-mail address
+            </button>
+        </section>
+                  <Section id="Skills">
+                 <div>
+                 <h3>Soft Skills</h3>
+                   <ul>
+                 <li>Effective Communication</li>
+                 <li>Time Management</li>
+                 <li>Problem Solving</li>
+                 <li>Autonomy/Self-Management</li>
+                   </ul>
+                 </div>
+                 <h3>Hard Skills</h3>
+                   <ul>
+                 <li>CRM Tools</li>
+                 <li>Ticket Resolution & Issue Tracking</li>
+                 <li>KPI'S - AHT, CSAT, etc. </li>
+                 <li>Data Entry & Documentation</li>
+                 </ul>             
+                  </Section>      
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Creado por Bryan Rodriguez</p>
+    </footer>
+    <script src="script.js"></script></body>
+</html>
