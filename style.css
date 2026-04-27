@@ -106,3 +106,35 @@ main section {
     display: inline-block; /* Hace que la línea solo ocupe el ancho del texto */
     padding-bottom: 5px;
 }
+/* --- AJUSTES PARA CELULAR --- */
+@media (max-width: 600px) {
+    /* Hacemos que el menú se ponga uno debajo de otro */
+    nav ul {
+        flex-direction: column; 
+        align-items: center;
+        gap: 10px;
+        padding: 0;
+    }
+
+    nav ul li {
+        display: block; /* Para que ocupen todo el ancho */
+        margin: 5px 0;
+    }
+
+    /* Ajustamos el tamaño de los títulos para que no ocupen toda la pantalla */
+    h1 {
+        font-size: 2rem;
+    }
+
+    /* Quitamos sangrías grandes en celular para ganar espacio */
+    main p {
+        text-indent: 15px; 
+        padding: 0 10px;
+    }
+
+    /* Hacemos que las tarjetas ocupen casi todo el ancho del celular */
+    .proyecto-card {
+        margin: 10px;
+        padding: 15px;
+    }
+}
