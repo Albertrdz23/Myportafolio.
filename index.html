@@ -13,8 +13,8 @@
     <ul>
         <li><a href="javascript:void(0)" onclick="mostrarSeccion('About_Me')">About me</a></li>
         <li><a href="javascript:void(0)" onclick="mostrarSeccion('Work_Experience')">Work Experience</a></li>
-        <li><a href="javascript:void(0)" onclick="mostrarSeccion('Contact')">Contact</a></li>
         <li><a href="javascript:void(0)" onclick="mostrarSeccion('Skills')">Skills</a></li>
+        <li><a href="javascript:void(0)" onclick="mostrarSeccion('Contact')">Contact</a></li>
     </ul>
       </nav>
 </header>
@@ -29,7 +29,7 @@
         </section>
   <section id="Work_Experience">
             <div class="proyecto-card">
-                <h3>Sales/Upseeling - Redwood S.A de C.V</h3>
+                <h3>Sales/Upselling - Redwood S.A de C.V</h3>
                 <p><em>November 2025 to March 2026</em></p>
                 <p>Advised customers on wellness and healthy aging products based on individual needs
 Built customer trust through clear communication and personalized service
@@ -53,15 +53,9 @@ Educated customers on products and services, identifying opportunities for solut
 Achieved productivity and quality targets in a fast-paced support environment</p>
     </div>
    </section>
-        <section id="Contact">
-            <h2>Contact</h2>
-            <button id="btn-copy" onclick="copiarEmail()">
-                Copy my e-mail address
-            </button>
-        </section>
-                  <Section id="Skills">
-                 <div>
-                 <h3>Soft Skills</h3>
+    <Section id="Skills">
+                 <div class="proyecto-card">
+                <h3>Soft Skills</h3>
                    <ul>
                  <li>Effective Communication</li>
                  <li>Time Management</li>
@@ -69,14 +63,37 @@ Achieved productivity and quality targets in a fast-paced support environment</p
                  <li>Autonomy/Self-Management</li>
                    </ul>
                  </div>
-                 <h3>Hard Skills</h3>
-                   <ul>
+                 <div class="proyecto-card">
+                 <h3>Hard Skills</h2><ul>
                  <li>CRM Tools</li>
                  <li>Ticket Resolution & Issue Tracking</li>
                  <li>KPI'S - AHT, CSAT, etc. </li>
                  <li>Data Entry & Documentation</li>
                  </ul>             
                   </Section>      
+<section id="Contact">
+    <h2>Contact Me</h2>
+    <div class="proyecto-card" style="text-align: center;">
+        <h3>Let's work together!</h3>
+        <p>Feel free to reach out through any of these platforms:</p>
+        
+        <div class="contact-buttons">
+            <button id="btn-copy" class="btn-email" onclick="copiarEmail()">
+                📧 Copy Email
+            </button>
+
+            <a href="https://wa.me/+50360234813" target="_blank" class="btn-whatsapp">
+                💬 WhatsApp
+            </a>
+
+            <a href="https://www.linkedin.com/in/bryan-rodriguez-6bb915275" target="_blank" class="btn-linkedin">
+                🔗 LinkedIn
+            </a>
+        </div>
+    </div>
+</section>
+    </p>
+        </section>
     </main>
 
     <footer>

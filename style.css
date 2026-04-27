@@ -3,17 +3,17 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     margin: 0;
-    color: #000000;
+    color: #4e4a4a;
     background-color: #D0D6B5;
-}
+}/*Estilos, fuentes y colores globales*/
 
 header {
     background: #0D3B66;
-    color: #FCFCFC;
+    color: #4e4a4a;
     padding: 1rem 0;
     text-align: center;
-}
-
+} 
+#BCBEB2
 nav ul {
     list-style: none;
     padding: 0;
@@ -26,10 +26,10 @@ nav ul li {
 }
 
 nav a {
-    color: #fff;
+    color: #e2e1e1;
     text-decoration: none;
     font-weight: bold;
-}
+} /*Navegacion, Estilos en el menu*/
 
 main {
     padding: 20px;
@@ -42,7 +42,7 @@ main p {
 main li {
     text-indent: 0;
     list-style-position: inside; /* Esto asegura que el puntito también se alinee bien */
-    margin-bottom: 15px;    /* Separa un párrafo del siguiente */
+    margin-bottom: 0px;    /* Separa un párrafo del siguiente */
     text-align: justify;    /* Hace que el texto se vea alineado por ambos lados */
     line-height: 1.6;    /* <--- Este es el interlineado profesional */
 }
@@ -50,17 +50,59 @@ main li {
 main ul {
     padding-left: 20px;
     margin-bottom: 20px;
+        margin-top: 20px;
 }
 }
 
 .proyecto-card {
-    background: #bcbeb2;
+    background: #e0e6c7;
     padding: 15px;
     margin-bottom: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-/* Esto va al final de style.css */
+}/*Esto le da color a los cuadros en experienca laboral*/
+
 main section {
     display: none;
+}
+/* Espaciado para el contenedor de botones */
+.contact-buttons {
+    display: flex;
+    flex-direction: column; /* Los pone uno arriba del otro */
+    gap: 15px;              /* Espacio entre botones */
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Estilos base para todos los botones de contacto */
+.btn-email, .btn-whatsapp, .btn-linkedin {
+    width: 250px;
+    padding: 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+/* Efecto al pasar el mouse (se agrandan un poquito) */
+.btn-email:hover, .btn-whatsapp:hover, .btn-linkedin:hover {
+    transform: scale(1.05);
+}
+
+/* Colores específicos */
+.btn-email { background-color: #4285F4; }    /* Azul Google */
+.btn-whatsapp { background-color: #25D366; } /* Verde WhatsApp */
+.btn-linkedin { background-color: #0077B5; } /* Azul LinkedIn */
+
+/* Estilo para los títulos dentro de las tarjetas */
+.proyecto-card h3 {
+    color: #4e4a4a;       /* Un color azul oscuro muy profesional */
+    font-size: 1.4rem;    /* Hace el título más grande */
+    margin-top: 0;        /* Quita espacio innecesario arriba */
+    margin-bottom: 2px;  /* Separa el título de los puntitos */
+    display: inline-block; /* Hace que la línea solo ocupe el ancho del texto */
+    padding-bottom: 5px;
 }
